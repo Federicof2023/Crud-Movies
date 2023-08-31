@@ -1,0 +1,36 @@
+<h1 class="main-title2 mb-5">List</h1>
+
+<table id="example" class="cell-border" style="width:100%">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Actions</th>
+
+    </tr>
+  </thead>
+  <tbody class="tbody-class">
+    {{#each peliculas}}
+      <tr>
+        <td>{{this.title}}</td>
+        <td>{{this.year}} </td>
+        <td>
+          <a
+            class="btn btn-secondary"
+            href="/peliculas/show/{{this._id}}"
+          >film...</a>
+
+        </td>
+
+      </tr>
+
+    {{/each}}
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+
+    </tr>
+  </tfoot>
+</table>

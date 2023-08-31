@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(#aad1f3,   #cfb6d0);
+  
+}
+
+.container {
+  margin-top: 4rem;
+}
+
+.a-class-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #046656;
+  padding: 4px;
+  margin-top: 1px;
+
+  color: aliceblue;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+.main-title2 {
+  font-size: 2rem;
+}
+
+.tbody-class {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.tbody-class1 {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.editar {
+  font-size: 2.2rem;
+}
+
+.show-class {
+  letter-spacing: -1;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.crear {
+  font-size: 2rem;
+}
+
+.footer_class {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+  color: rgb(191, 191, 191);
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: darkgrey;
+}

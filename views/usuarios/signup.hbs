@@ -1,0 +1,59 @@
+<h2 class="main-title-signup">Sign Up to see all content.</h2>
+
+<form action="/auth/signup" method="POST">
+
+  {{!Nombre}}
+
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control w-50"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+    />
+  </div>
+  {{!correo }}
+
+  <div class="mb-1">
+    <label for="email" class="form-label">Username or email address</label>
+    <input
+      type="email"
+      class="form-control w-50"
+      id="email"
+      name="email"
+      placeholder="Enter your email or Username"
+    />
+    {{! <button class="btn btn-warning mt-2">Sign up</button> }}
+  </div>
+
+  {{!password}}
+
+  <div class="mb-1 mt-5">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control w-50"
+      id="password"
+      name="password"
+      placeholder="Enter your password"
+    />
+    {{! <button class="btn btn-warning mt-2">Signin</button> }}
+  </div>
+
+  {{!reingresar - password}}
+
+  <div class="mb-1 mt-3">
+    <label for="confirm-password" class="form-label">Confirm password</label>
+    <input
+      type="password"
+      class="form-control w-50"
+      id="confirm_password"
+      name="confirm_password"
+      placeholder="Confirm password"
+    />
+    <button class="btn btn-warning mt-5">Sign Up </button>
+  </div>
+
+</form>

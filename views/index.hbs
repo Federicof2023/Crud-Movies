@@ -1,0 +1,49 @@
+<h1 class="main-title mb-5">Movies</h1>
+
+<table id="example" class="cell-border" style="width:100%">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody class="tbody-class">
+    {{#each peliculas}}
+      <tr>
+        <td>{{this.title}}</td>
+        <td>{{this.year}}</td>
+        <td>
+          <a
+            class="btn btn-secondary"
+            href="/peliculas/show/{{this._id}}"
+          >Watch...</a>
+          <a
+            class="btn btn-warning"
+            href="/peliculas/edit/{{this._id}}"
+          >Edit...</a>
+
+          <form
+            class="d-inline"
+            action="/peliculas/remove/{{this._id}}?_method=DELETE"
+            method="POST"
+          >
+            <button
+              onclick="deseaEliminar(1)"
+              class="btn btn-danger"
+            >Delete</button>
+          </form>
+
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Actions</th>
+
+    </tr>
+  </tfoot>
+</table>

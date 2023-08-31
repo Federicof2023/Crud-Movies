@@ -1,0 +1,31 @@
+<h2 class="main-title-login">Sign In</h2>
+
+<form action="/auth/signin" method="POST">
+
+  {{!correo}}
+
+  <div class="mb-3">
+    <label class="mt-2 mb-3" for="email" class="form-label">Username or email
+      address</label>
+    <input
+      type="email"
+      class="form-control w-50"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+    />
+  </div>
+  {{!Password }}
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control w-50"
+      id="password"
+      name="password"
+      placeholder="Password"
+    />
+    <button class="btn btn-warning mt-5">Sign in</button>
+  </div>
+
+</form>
